@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--btn-color: #9f68e0;
+	--bg-color: #686de0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	background-color: var(--bg-color);
+	height: 100vh;
+	overflow: hidden;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+	border-radius: 1em;
+	background-color: #fff;
+	padding: 3rem 1rem 3rem 2rem;
+	padding-block: 3em;
+	width: 50rem;
+	max-width: 90vw;
+	text-align: center;
+}
+
+h3 {
+	opacity: 0.5;
+	margin: 0;
+	font-size: clamp(1rem, 1rem + 1vw, 2rem);
+	letter-spacing: 2px;
+}
+
+.joke {
+	margin: 3.125rem auto;
+	max-width: 37.5rem;
+	font-size: 1.875rem;
+	line-height: 1.5em;
+	text-align: left;
+}
+
+@media (max-width: 375px) {
+	.joke-sml-txt {
+		font-size: 1.5rem;
+	}
+}
+
+.btn {
+	cursor: pointer;
+	margin-left: -1rem;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+	border: 0;
+	border-radius: 0.75rem;
+	background-color: var(--btn-color);
+	padding: 1rem 2.5rem;
+	color: #fff;
+	font-size: 1rem;
+}
+
+.btn:active {
+	transform: scale(0.98);
+}
+
+.btn:focus {
+	outline: 0;
+}
+
+.btn:hover {
+	filter: brightness(110%);
+}
